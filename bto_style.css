@@ -1,0 +1,171 @@
+.button {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.button.type4 {
+    color: #66FF00;
+}
+
+.button.type4::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    background-color: greenyellow;
+    transition: width 0.3s;
+}
+
+.button.type4:hover::after {
+    width: 100%;
+}
+
+#giris_body {
+    width: 100%;
+    height: 100vh;
+    text-align: justify;
+}
+
+#sunum {
+    height: 50%;
+}
+
+#sunum .overlay {
+    position: relative;
+    margin: auto;
+    height: 50vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menuler {
+    display: inline;
+}
+
+.haber {
+    margin: 20px;
+    border: 2px solid black;
+    width: 400px;
+    background-color: white;
+}
+
+#haberler {
+    height: 100vh;
+    background-image: url("Resimler/kara_kalem_orman.jpg");
+    background-size: cover;
+}
+
+#haberler .overlay {
+    background-color: rgba(255, 255, 255, .8);
+    height: 100%;
+}
+
+.haber .resim {
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+}
+
+.haber .resim-td {
+    width: 150px;
+    height: 150px
+}
+
+.haber .haber-baslik {
+    font-weight: bolder;
+    height: 100px;
+    overflow: hidden;
+}
+
+.haber .haber-tarih {
+    color: rgb(13, 158, 90);
+}
+
+#calismalar-slider {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#anasayfa-footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+}
+
+#anasayfa-footer.footerbaslik {
+    color: white;
+}
+
+#portfolio .col-md-3 {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+#portfolio h4 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#portfolio .fa {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#portfolio p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.imageContainer {
+    position: relative;
+    cursor: pointer;
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1886c7;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.imageContainer:hover .imageOverlay {
+    opacity: .7;
+}
+
+.imageText {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#projeler {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@media screen and (min-width: 1201px) {
+    .haber {
+        margin: 20px;
+        border: 2px solid black;
+        width: 1000px;
+        background-color: white;
+    }
+}
